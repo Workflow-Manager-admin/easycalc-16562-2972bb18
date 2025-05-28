@@ -1,33 +1,26 @@
 import React from 'react';
 import './App.css';
+import Calculator from './Calculator';
 
+// PUBLIC_INTERFACE
 function App() {
   return (
-    <div className="app">
-      <nav className="navbar">
+    <div className="app" style={{ background: '#f0f0f0', minHeight: '100vh' }}>
+      <nav className="navbar" style={{ background: '#007bff', color: '#fff' }}>
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-            <div className="logo">
-              <span className="logo-symbol">*</span> KAVIA AI
+            <div className="logo" style={{ color: '#fff' }}>
+              <span className="logo-symbol" style={{ color: '#fff' }}>⎈</span> EasyCalc
             </div>
-            <button className="btn">Template Button</button>
           </div>
         </div>
       </nav>
-
       <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">easycalc_frontend</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
+        <div
+          className="container"
+          style={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-start', minHeight: '100vh' }}
+        >
+          <Calculator />
         </div>
       </main>
     </div>
